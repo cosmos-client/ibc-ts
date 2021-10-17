@@ -1,6 +1,6 @@
 {
   "name": "@cosmos-client/ibc",
-  "description": "REST API Client for Cosmos SDK IBC module",
+  "description": "REST API client for Cosmos SDK IBC module",
   "version": "1.2.0",
   "author": "CauchyE, Inc.",
   "bugs": {

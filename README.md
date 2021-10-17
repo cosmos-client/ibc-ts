@@ -1,6 +1,6 @@
 # @cosmos-client/ibc
 
-JavaScript / TypeScript client for Cosmos SDK IBC module.
+REST API client for Cosmos SDK IBC module.
 
 ## Install
 
