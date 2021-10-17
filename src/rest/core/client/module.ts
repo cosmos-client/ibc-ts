@@ -1,4 +1,4 @@
-import { QueryApi } from '../../../../openapi/api';
+import { QueryApi } from '../../../openapi/api';
 import { cosmosclient } from '@cosmos-client/core';
 
 export function clientStates(

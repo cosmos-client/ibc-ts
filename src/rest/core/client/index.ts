@@ -1,4 +1,4 @@
-import { ibc } from '../../../../proto';
+import { ibc } from '../../../proto';
 import { cosmosclient } from '@cosmos-client/core';
 
 export * as client from './module';
