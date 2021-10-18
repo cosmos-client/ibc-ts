@@ -5,8 +5,10 @@ REST API client for Cosmos SDK IBC module.
 ## Install
 
 ```shell
-npm install @cosmos-client/ibc
+npm install @cosmos-client/core @cosmos-client/ibc
 ```
+
+To see the usage of `@cosmos-client/core`, please see this [link](https://github.com/cosmos-client/cosmos-client-ts);
 
 ## Examples
 
