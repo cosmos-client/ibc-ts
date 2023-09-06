@@ -1,8 +1,8 @@
 /* tslint:disable */
 /* eslint-disable */
 /**
- * Cosmos SDK - Legacy REST and gRPC Gateway docs
- * A REST interface for state queries, legacy transactions
+ * IBC-GO - gRPC Gateway docs
+ * A REST interface for state queries
  *
  * The version of the OpenAPI document: 1.0.0
  * 
