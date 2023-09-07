@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 
 rm -r ./proto
-rm -r ./proto-thirdparty
-cp -r ~/src/github.com/cosmos/ibc-go/proto ./proto
-cp -r ~/src/github.com/cosmos/ibc-go/third_party/proto ./proto-thirdparty
-mv ./proto-thirdparty/tendermint ./proto/
+cp -r ./ibc-go/proto ./proto
+wget https://github.com/bufbuild/buf/releases/download/v1.13.1/buf-Linux-x86_64
+sudo chmod 777 ./buf-Linux-x86_64
+./buf-Linux-x86_64 export buf.build/cosmos/cosmos-sdk:v0.47.0 --output ./proto
+./buf-Linux-x86_64 export buf.build/cosmos/ics23 --output ./proto
+rm ./buf-Linux-x86_64
 
 proto_dirs=$(find ./proto -path -prune -o -name '*.proto' -print0 | xargs -0 -n1 dirname | sort | uniq)
 proto_files=()
@@ -42,4 +44,3 @@ npx pbts \
   ./src/proto.js
 
 rm -r ./proto
-rm -r ./proto-thirdparty
