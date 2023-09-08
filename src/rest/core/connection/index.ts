@@ -1,5 +1,5 @@
 import { ibc } from '../../../proto';
-import { cosmosclient } from '@cosmos-client/core';
+import cosmosclient from '@cosmos-client/core';
 
 export * as connection from './module';
 

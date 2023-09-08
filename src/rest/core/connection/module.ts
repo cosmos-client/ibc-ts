@@ -1,5 +1,5 @@
 import { QueryApi } from '../../../openapi/api';
-import { cosmosclient } from '@cosmos-client/core';
+import cosmosclient from '@cosmos-client/core';
 
 export function clientConnections(sdk: cosmosclient.CosmosSDK, clientID: string) {
   return new QueryApi(undefined, sdk.url).clientConnections(clientID);
